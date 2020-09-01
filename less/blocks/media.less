@@ -1,0 +1,148 @@
+@media (max-width: 1190px) {
+  .search {
+    width: 300px;
+  }
+  .header__links {
+    display: block;
+  }
+  .header__link {
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .category__list {
+    margin-right: 0;
+    justify-content: space-around;
+  }
+  .category__item {
+    margin-right: 0;
+  }
+  .btn-top {
+    right: 15px;
+  }
+}
+
+//--------------------------------------------
+@media (max-width: 1022px) {
+  .header__wrap {
+    flex-wrap: wrap;
+  }
+  .logo {
+    position: static;
+    transform: none;
+    order: 1;
+  }
+  .header__phones {
+    order: 2;
+    margin-left: auto;
+  }
+  .header__block {
+    order: 3;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .menu__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    
+    &--close {
+      background-image: url(../img/icons/cross.svg);
+      background-size: 25px 25px;
+    }
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .footer .menu__list {
+    display: none !important;
+  }
+  .menu {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .menu__link {
+    padding: 15px;
+  }
+  .company__info {
+    width: 100%;
+  }
+  .company__img {
+    width: 100%;
+    text-align: center;
+  }
+  .company__wrap {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding-top: 10px;
+  }
+  .btn-top {
+    bottom: 10px;
+  }
+}
+
+//--------------------------------------------
+@media (max-width: 766px) {
+  .header__wrap {
+    flex-direction: column;
+  }
+  .header__phones {
+    margin-right: auto;
+  }
+  .logo img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .header__links {
+    margin-top: 20px;
+  }
+  .header__contacts {
+    text-align: center;
+  }
+}
+
+//--------------------------------------------
+@media (max-width: 480px) {
+  .promo__info {
+    padding-bottom: 70px;
+  }
+  .category__img {
+    height: 160px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer {
+    padding-bottom: 20px;
+  }
+  .social {
+    margin-top: 20px;
+  }
+  .social__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

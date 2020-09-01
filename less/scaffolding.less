@@ -17,10 +17,29 @@ body {
 }
 
 main {
+  overflow: hidden;
   background-image: url(../img/images/bg-bottom.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100% auto;
+}
+
+.main-page {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 1920px;
+    height: 1990px;
+    background-image: url(../img/images/bg-main.png);
+    background-size: contain;
+  }
 }
 
 img {
