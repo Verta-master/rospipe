@@ -33,18 +33,26 @@
 
 .about__info {
   width: ~"calc(100% - 460px)";
-  padding: 40px;
+  padding: 35px 40px;
+  padding-bottom: 45px;
   padding-right: 60px;
+  
+  time {
+    color: @blue;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .about__btn {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .about__map {
   min-height: 400px;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   background-image: url(../img/images/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +78,7 @@
 
 .about__columns {
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .about__column {
@@ -174,6 +182,7 @@
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  text-align: left;
   .transition();
   
   &:hover,
@@ -193,5 +202,17 @@
   
   p {
     margin-top: 0;
+  }
+}
+
+.about__news {
+  margin-top: 60px;
+  
+  .about__info {
+    padding-right: 190px;
+    padding-top: 50px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
   }
 }
