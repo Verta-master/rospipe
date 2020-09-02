@@ -2,7 +2,11 @@
 $('.menu__btn').click(function() {
   $(this).toggleClass('menu__btn--close');
   $('.menu__list').slideToggle();
-})
+});
+
+$('.search-icon').click(function() {
+  $('.search').toggleClass('search--show');
+}) 
 
 //Scroll to top
 $(window).scroll(function(){
