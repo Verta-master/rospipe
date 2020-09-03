@@ -733,6 +733,46 @@ h3,
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper--columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.wrapper__content {
+  position: relative;
+  width: calc(100% - 300px);
+  padding-top: 10px;
+}
+.wrapper__content .date {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.wrapper__content .breadcrumbs {
+  margin-bottom: 28px;
+  padding-right: 150px;
+}
+.date {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 20px;
+  padding-right: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+  border: 1px solid #29547A;
+  background-image: url(../img/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 16px;
+  background-position: right 15px center;
+}
 .menu__btn {
   display: none;
 }
@@ -1705,6 +1745,59 @@ a.breadcrumbs__link::after {
 }
 .contacts__block {
   margin-bottom: 40px;
+}
+.sidebar {
+  width: 260px;
+  padding-top: 15px;
+}
+.sidebar__sublist,
+.sidebar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000000;
+}
+.sidebar__list {
+  margin-bottom: 20px;
+}
+.sidebar__item {
+  margin-bottom: 16px;
+}
+.sidebar__item:hover .sidebar__link,
+.sidebar__item:active .sidebar__link,
+.sidebar__item--active .sidebar__link {
+  color: #29547A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__sublist {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.sidebar__subitem {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.sidebar__subitem a {
+  display: block;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__subitem:hover a,
+.sidebar__subitem:active a,
+.sidebar__subitem--active a {
+  color: #29547A;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 @media (max-width: 1190px) {
   .search {
