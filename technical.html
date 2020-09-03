@@ -148,7 +148,7 @@
           </div>
         </div>
         
-        <p class="title">Вы готовы сделать заказ и обсудить условия?<br>Звоните прямо сейчас!</p>
+        <p class="title technical__title">Вы готовы сделать заказ и обсудить условия?<br>Звоните прямо сейчас!</p>
         <div class="technical__block">
           <div class="technical__form">
             <form action="#" class="form">
@@ -228,6 +228,20 @@
       preventClicksPropagation: false,
       slidesPerView: 6,
       spaceBetween: 40,
+      breakpoints: {
+        1190: {
+          slidesPerView: 5,
+        },
+        1022: {
+          slidesPerView: 4,
+        },
+        766: {
+          slidesPerView: 3,
+        },
+        480: {
+          slidesPerView: 2,
+        }
+      }
     });
   </script>
 </body>
