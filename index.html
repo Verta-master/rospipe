@@ -34,7 +34,7 @@
       <div class="header__phones">
         <a href="tel:+78005553692" class="header__contacts">+7 (800) 555-36-92</a>
         <a href="mailto:info@ros-pipe.ru" class="header__contacts">info@ros-pipe.ru</a>
-        <a href="#" class="btn header__btn">Обратная связь</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn header__btn">Обратная связь</a>
       </div>
     </div>
   </header>
@@ -245,6 +245,19 @@
   </footer>
   
   <a href="#top" class="btn-top" title="Наверх"></a>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Обратная связь</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя">
+      <input type="tel" class="form__input" placeholder="Телефон">
+      <textarea class="form__message" placeholder="Комментарий"></textarea>
+      <input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox" class="checkbox__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Отправить</button>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
