@@ -1607,6 +1607,7 @@ a.breadcrumbs__link::after {
   .header__link span {
     display: none;
   }
+  .technical__list,
   .service__list {
     margin-right: 0;
   }
@@ -1734,10 +1735,12 @@ a.breadcrumbs__link::after {
   .category__img {
     height: 189px;
   }
+  .technical__list,
   .service__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .technical__item,
   .service__item {
     margin-right: 0;
   }
@@ -1882,6 +1885,7 @@ a.breadcrumbs__link::after {
     display: block;
     margin-bottom: 0;
   }
+  .form__btn,
   .about__label {
     width: 100%;
     margin-bottom: 20px;
@@ -1897,7 +1901,20 @@ a.breadcrumbs__link::after {
     margin-right: 5px;
     padding-left: 40px;
   }
+  .technical__block,
   .service__block {
     padding: 30px;
+  }
+  .technical__title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .form__input,
+  .form__message {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .form__btn {
+    margin-right: 0;
   }
 }
