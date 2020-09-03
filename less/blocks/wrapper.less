@@ -5,4 +5,43 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  
+  &--columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.wrapper__content {
+  position: relative;
+  width: ~"calc(100% - 300px)";
+  padding-top: 10px;
+  
+  .date {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  
+  .breadcrumbs {
+    margin-bottom: 28px;
+    padding-right: 150px;
+  }
+}
+
+.date {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 20px;
+  padding-right: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+  border: 1px solid #29547A;
+  background-image: url(../img/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 16px;
+  background-position: right 15px center;
 }
