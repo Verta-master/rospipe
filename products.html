@@ -67,6 +67,7 @@
     <div class="wrapper wrapper--columns">
       <aside class="sidebar">
         <nav class="sidebar__nav">
+          <button type="button" class="btn btn--border sidebar__btn">Навигация</button>
           <ul class="sidebar__list">
             <li class="sidebar__item">
               <a href="#" class="sidebar__link sidebar__link--down">Компенсаторы</a>
@@ -256,11 +257,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   
   <script>
-  //Sidebar drop menu
+  //Sidebar
     $('.sidebar__link--down').click(function() {
       event.preventDefault();
       $(this).next().slideToggle();
-    })
+    });
+    
+    $('.sidebar__btn').click(function() {
+      $('.sidebar__list').slideToggle();
+    });
   </script>
 </body>
 </html>

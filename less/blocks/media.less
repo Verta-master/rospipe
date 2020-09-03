@@ -176,6 +176,26 @@
     position: static;
     width: 100%;
   }
+  .wrapper--columns {
+    flex-direction: column-reverse;
+  }
+  .wrapper__content {
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar__btn {
+    display: flex;
+    width: 260px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    box-shadow: none;
+  }
+  .sidebar__list {
+    display: none;
+  }
 }
 
 //--------------------------------------------
@@ -339,5 +359,12 @@
   }
   .form__btn {
     margin-right: 0;
+  }
+  .wrapper__content .date {
+    position: static;
+    margin-bottom: 20px;
+  }
+  .wrapper__content .breadcrumbs {
+    padding-right: 0;
   }
 }
