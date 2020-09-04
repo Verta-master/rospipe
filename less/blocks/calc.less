@@ -1,0 +1,222 @@
+.calc {
+  width: 1160px;
+  max-width: 100%;
+  padding: 36px 50px;
+  color: #000;
+  background-color: #FFFFFF;
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.4;
+  background-color: #000;
+}
+
+.calc__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.calc__subtitle {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2E313A;
+}
+
+.calc__category-list,
+.calc__list {
+  .reset();
+  list-style: none;
+}
+
+.calc__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -3.3%;
+}
+
+.calc__item {
+  position: relative;
+  width: 30%;
+  margin-right: 3.3%;
+  margin-bottom: 40px;
+  
+  &:hover,
+  &:active {
+    .calc__info {
+      color: #fff;
+      background-color: #29547A;
+      .transition();
+    }
+    
+    .calc__icon {
+      background-color: #29547A;
+      .transition();
+      
+      svg {
+        fill: #fff;
+        .transition();
+      }
+    }
+  }
+}
+
+.calc__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calc__img {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #29547A;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+  }
+}
+
+.calc__icon {
+  position: absolute;
+  z-index: 5;
+  top: 122px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECECEC;
+  border-radius: 50%;
+  .transition();
+  
+  svg {
+    width: 21px;
+    height: 18px;
+    fill: #C9C9C9;
+    .transition();
+  }
+}
+
+.calc__info {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ECECEC;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  .transition();
+}
+
+.calc__btn {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #C9C9C9;
+  box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.12);
+  background-image: none;
+  
+  &:hover,
+  &:active {
+    background-color: @blue;
+    background: linear-gradient(97.74deg, #29547A -10.27%, #173C65 110.02%);
+  }
+}
+
+.calc__steps {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.calc__wrap {
+  position: relative;
+  
+  .calc__subtitle {
+    max-width: 510px;
+  }
+}
+
+.calc__form {
+  width: 440px;
+  max-width: 100%;
+  
+  .form__btn {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+}
+
+.calc__category {
+  width: 390px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.calc__label,
+.calc__category-list li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C9C9C9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 18px;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.calc__checkbox:checked + .calc__label,
+.calc__active {
+  color: #000;
+  
+  &::before {
+    background-image: url(../img/icons/tick-blue.svg) !important;
+  }
+}
+
+.calc__checkbox {
+  display: none;
+}
+
+.calc__label {
+  display: block;
+}
