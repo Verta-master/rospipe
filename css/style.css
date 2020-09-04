@@ -1160,6 +1160,59 @@ h3,
   -webkit-box-shadow: 5px 5px 40px rgba(46, 49, 58, 0.15);
           box-shadow: 5px 5px 40px rgba(46, 49, 58, 0.15);
 }
+.about__block--service .about__img {
+  width: 260px;
+}
+.about__block--service .about__info {
+  width: calc(100% - 260px);
+  padding: 40px;
+  padding-bottom: 50px;
+  padding-right: 80px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.about__block--service .about__info p {
+  margin-bottom: 10px;
+}
+.about__block--service .about__info .about__title {
+  margin-bottom: 20px;
+}
+.about__block--service .about__btn {
+  margin-top: 25px;
+}
+.about__title {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.about__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.about__links li {
+  margin-right: 20px;
+}
+.about__links a {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #29547A;
+}
+.about__links a:hover,
+.about__links a:active {
+  text-decoration: underline;
+}
 .about__img {
   width: 460px;
   max-width: 50%;
@@ -1377,6 +1430,28 @@ h3,
   line-height: 150%;
   color: #000;
 }
+.about__pic {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__pic img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+}
 .breadcrumbs {
   margin-bottom: 60px;
 }
@@ -1499,6 +1574,54 @@ a.breadcrumbs__link::after {
 .service__info {
   max-width: 960px;
   margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #000;
+}
+.service__wrap {
+  position: relative;
+}
+.service__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  border-top: 1px solid #C9C9C9;
+}
+.service__border-btn {
+  margin-top: 30px;
+}
+.service__border-img {
+  width: 360px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.service__border-img img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+.service__border-text {
+  width: calc(100% - 360px);
+  padding-left: 40px;
+  padding-right: 30px;
   font-size: 14px;
   line-height: 1.7;
   color: #000;
@@ -1947,6 +2070,8 @@ a.breadcrumbs__link::after {
   .about__block {
     display: block;
   }
+  .about__block--service .about__info,
+  .about__block--service .about__img,
   .about__column,
   .about__img,
   .about__info {
@@ -2096,7 +2221,39 @@ a.breadcrumbs__link::after {
   .menu__btn {
     top: -50px;
   }
+  .about__block--service .about__img,
   .service__pic {
+    height: auto;
+  }
+  .service__wrap .date {
+    position: relative !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    right: auto;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .service__border {
+    display: block;
+  }
+  .service__border-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .service__border-img img {
+    width: 100%;
+    height: auto;
+  }
+  .service__border-text {
+    width: 100%;
+    padding: 0;
+  }
+  .about__block--service .about__info {
+    padding: 30px;
+  }
+  .about__pic {
     height: auto;
   }
 }
