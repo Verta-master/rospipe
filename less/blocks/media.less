@@ -131,6 +131,8 @@
   .about__block {
     display: block;
   }
+  .about__block--service .about__info,
+  .about__block--service .about__img,
   .about__column,
   .about__img,
   .about__info {
@@ -266,7 +268,39 @@
   .menu__btn {
     top: -50px;
   }
+  .about__block--service .about__img,
   .service__pic {
+    height: auto;
+  }
+  .service__wrap .date {
+    position: relative !important;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .service__border {
+    display: block;
+  }
+  .service__border-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .service__border-text {
+    width: 100%;
+    padding: 0;
+  }
+  .about__block--service .about__info {
+    padding: 30px;
+  }
+  .about__pic {
     height: auto;
   }
 }
