@@ -1,0 +1,40 @@
+.about__views {
+  width: 460px;
+  max-width: 100%;
+  padding: 35px;
+}
+
+.about__view {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1022px) {
+  .about__views {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__views {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .about__view {
+    height: 135px;
+  }
+}
